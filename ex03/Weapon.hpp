@@ -12,6 +12,8 @@ public:
         const std::string& getType();      //const doesnt allow the caller to change the value
 
         void    setType(std::string newType);
+
+        Weapon(std::string newType);
 };
 
 #endif
