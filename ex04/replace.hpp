@@ -5,6 +5,6 @@
 #include <iostream>
 #include <fstream>
 
-std::string replace( std::string content, std::string s1, std::string s2 );
+std::string replace(const std::string& content, const std::string& s1, const std::string& s2);
 
 #endif

@@ -9,7 +9,7 @@ class HumanA
 {
 private:
         std::string _name;
-        Weapon& _weapon;     //stores the actual weapon objet, not the copy
+        Weapon& _weapon;
 public:
         HumanA(std::string name, Weapon& weapon);
         void    attack();

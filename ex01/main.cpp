@@ -2,9 +2,15 @@
 
 int main()
 {
-    Zombie *z = zombieHorde(5, "Bob");
-    std::cout << z[3].getName() << std::endl;
+    int n = 5;
+    Zombie* horde = zombieHorde(n, "Bob");
 
-    delete[] z;
+    if (!horde)
+        return 1;
+
+    for (int i = 0; i < n; ++i)
+        horde[i].announce();
+
+    delete[] horde;
     return 0;
 }

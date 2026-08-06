@@ -1,6 +1,5 @@
 #include "HumanB.hpp"
 
-
 void    HumanB::setName(std::string name)
 {
     _name = name;
@@ -11,6 +10,10 @@ std::string HumanB::getName()
     return _name;
 }
 
+void    HumanB::setWeapon(Weapon& weapon)
+{
+    _weapon = &weapon;
+} 
 
 void    HumanB::attack()
 {
